@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid  border="0" style="alignment-adjust: central">
+            First Name:<h:inputText id="lastname" title="please enter your last name" value="#{UserProfile.lastname}" required="true" requiredMessage="please enter a valid last name"></h:inputText>
+            Last Name:<h:inputText id="firstname" title="please enter your first name" value="#{UserProfile.firstname}" required="true" requiredMessage="please enter a valid first name"></h:inputText>
+            E-mail id:<h:inputText id="email" title="please enter your email" value="#{UserProfile.email}" required="true" requiredMessage="please enter a valid email"></h:inputText> 
+            User Name:<h:inputText id="username" title="please enter your user name" value="#{UserProfile.username}" required="true" requiredMessage="please enter a valid user name"></h:inputText>
+            Password:<h:inputText id="password" title="please enter your password" value="#{UserProfile.password}" required="true" requiredMessage="please enter a valid password"></h:inputText>         
+            Your Gender:<h:selectOneListbox value="#{UserProfile.gender}">
+                     <f:selectItem itemValue="male"/>
+                     <f:selectItem itemValue="female"/>
+                    </h:selectOneListbox>
+            Seeking:<h:selectOneListbox value="#{UserProfile.seeking}">
+                     <f:selectItem itemValue="male"/>
+                     <f:selectItem itemValue="female"/>
+                    </h:selectOneListbox>
+            Your RelationShip Status:<h:inputText id="relationship" title="please enter your relationship status" value="#{UserProfile.relationship}" required="true" requiredMessage="please enter a valid relationship status"></h:inputText>         
+            Your Age:<h:inputText id="age" title="please enter your age" value="#{UserProfile.age}" required="true" requiredMessage="please enter a valid age"></h:inputText>         
+            Your City:<h:inputText id="city" title="please enter your city" value="#{UserProfile.city}" required="true" requiredMessage="please enter a valid city"></h:inputText>         
+            Your Zipcode:<h:inputText id="zipcode" title="please enter your zipcode" value="#{UserProfile.zipcode}" required="true" requiredMessage="please enter a valid zipcode"></h:inputText>         
+            Your DOB:<h:inputText id="dob" title="please enter your dob" value="#{UserProfile.dob}" required="true" requiredMessage="please enter a valid dob"></h:inputText>         
+            Your Ethnicity:<h:inputText id="ethnicity" title="please enter your ethnicity" value="#{UserProfile.ethnicity}" required="true" requiredMessage="please enter a valid ethnicity"></h:inputText>         
+            Your Religion:<h:inputText id="religion" title="please enter your religion" value="#{UserProfile.religion}" required="true" requiredMessage="please enter a valid religion"></h:inputText>         
+            Your Language:<h:inputText id="language" title="please enter your language" value="#{UserProfile.language}" required="true" requiredMessage="please enter a valid language"></h:inputText>         
+            YOur Education:<h:inputText id="education" title="please enter your education" value="#{UserProfile.education}" required="true" requiredMessage="please enter a valid education"></h:inputText>         
+            Your Occupation:<h:inputText id="occupation" title="please enter your password" value="#{UserProfile.occupation}" required="true" requiredMessage="please enter a valid occupation"></h:inputText>         
+            Your Income:<h:inputText id="income" title="please enter your income" value="#{UserProfile.income}" required="true" requiredMessage="please enter a valid income"></h:inputText>         
+            Your Type:<h:inputText id="type" title="please enter your type" value="#{UserProfile.type}" required="true" requiredMessage="please enter a valid type"></h:inputText>         
+            Your Interests:<br></br>
+                  1.<h:inputText id="interest01" title="please enter your interest" value="#{UserProfile.interest01}" required="true" requiredMessage="please enter a valid interest"></h:inputText>         
+                  2.<h:inputText id="interest02" title="please enter your interest" value="#{UserProfile.interest02}" required="true" requiredMessage="please enter a valid interest"></h:inputText>         
+                  3.<h:inputText id="interest03" title="please enter your interest" value="#{UserProfile.interest03}" required="true" requiredMessage="please enter a valid interest"></h:inputText>         
+            Describer yourself in 100 words:
+            <h:inputTextarea id="desc" title="please describe yourself" value="#{UserProfile.desc}" required="true" requiredMessage="please enter a data"></h:inputTextarea>
+            
+            Security Question 01:<h:inputText id="securityq01" title="please enter your security question" value="#{UserProfile.securityq01}" required="true" requiredMessage="please enter a valid security question"></h:inputText>         
+            Answer 01: <h:inputText id="answer01" title="please enter your answer" value="#{UserProfile.answer01}" required="true" requiredMessage="please enter a valid answer"></h:inputText>         
+            Security Question 01:<h:inputText id="securityq02" title="please enter your security question" value="#{UserProfile.securityq02}" required="true" requiredMessage="please enter a valid security question"></h:inputText>         
+            Answer 02: <h:inputText id="answer02" title="please enter your interest" value="#{UserProfile.answer02}" required="true" requiredMessage="please enter a valid answer"></h:inputText>          
+            
+            From here you can now enter requirements of your preferences:
+            Preference Age:<h:inputText id="mage" title="please enter your preference age" value="#{UserProfile.mage}" required="true" requiredMessage="please enter a age"></h:inputText>         
+            Preference City:<h:inputText id="mcity" title="please enter your preference city" value="#{UserProfile.mcity}" required="true" requiredMessage="please enter a valid city"></h:inputText>         
+            Preference Relationship status:<h:inputText id="mrelationship" title="please enter your preference relationship status" value="#{UserProfile.mrelationship}" required="true" requiredMessage="please enter a valid relationship status"></h:inputText>         
+            Preference Religion:<h:inputText id="mreligion" title="please enter your preference religion" value="#{UserProfile.mreligion}" required="true" requiredMessage="please enter a valid religion"></h:inputText>         
+            Preference Language:<h:inputText id="mlanguage" title="please enter your preference language" value="#{UserProfile.mlanguage}" required="true" requiredMessage="please enter a valid language"></h:inputText>         
+            Preference Education:<h:inputText id="meducation" title="please enter your preference education" value="#{UserProfile.meducation}" required="true" requiredMessage="please enter a valid education"></h:inputText>         
+            Preference Occupation:<h:inputText id="moccupation" title="please enter your preference occupation" value="#{UserProfile.moccupation}" required="true" requiredMessage="please enter a valid occupation"></h:inputText>         
+            Preference Ethnicity:<h:inputText id="methnicity" title="please enter your preference ethnicity" value="#{UserProfile.methnicity}" required="true" requiredMessage="please enter a valid ethnicity"></h:inputText>         
+            </h:panelGrid>
+            </h:form>
+    </h:body>
+</html>
+
